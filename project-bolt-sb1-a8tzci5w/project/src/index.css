@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0d0f14;
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  .glow-button {
+    @apply bg-transparent border border-accent-primary text-accent-primary px-4 py-2 rounded-md 
+    hover:bg-accent-primary hover:text-black transition-all duration-300 shadow-glow hover:shadow-glow-lg;
+  }
+  
+  .card-glow {
+    @apply bg-bg-card border border-gray-700 rounded-lg p-4 hover:border-accent-primary 
+    transition-all duration-300 hover:shadow-glow;
+  }
+  
+  .nav-link {
+    @apply text-text-secondary hover:text-accent-primary transition-colors duration-300 
+    hover:drop-shadow-[0_0_8px_rgba(66,248,245,0.8)] font-medium;
+  }
+}
